@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spidey Tracker</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <!-- Font Awesome-->
+     <script src="https://kit.fontawesome.com/50bffcd4b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/journal.html">Journal</a></li>
+        <li><a href="/pages/projects.html">Projects</a></li>
+        <li><a href="/pages/skills.html">Skills</a></li>
+        <li><a href="/pages/missions.html">Missions</a></li>
+    </ul>
+</nav>
+
+<section class="mainSection" id="mainSection">
+<div class="heading-container">
+    <div class="underline"></div>
+    <div class="mixedHeader">
+        <h1 class="subHeader">Proj</h1>
+        <h1 class="mainHeader">ects</h1>
+    </div>
+    <div class="underline"></div>
+</div>
+</section>
+
+<!-- Load Projects Section-->
+ <section id="projectsLoad">
+    <h1 class="projectsLoadHeading"> List of Projects </h1>
+    <div class="projectsLoadContainer">
+        <button class="addProject">Add a Project +</button>
+        <!-- Projects will be added through JavaScript-->
+
+    </div>
+ </section>
+<!-- End of Load Projects Section-->
+
+
+<!-- New Project Form-->
+ <div class="projectModal" id="projectModal">
+    <div class="projectForm">
+        <button class="closeProjectForm" id="closeProjectForm">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Add New Project</h2>
+
+        <form id="projectForm">
+            <label for="projectName">Project Name</label>
+            <input
+            type="text"
+            id="projectName"
+            placeholder="insert here"
+            required
+        >
+        <label for="projectDescription">Description</label>
+        <textarea
+            id="projectDescription"
+            placeholder="What is this project?"
+            required
+        ></textarea>
+
+        <label for="projectLanguage"> Languages / Technologies</label>
+        <input
+            type="text"
+            id="projectLanguage"
+            placeholder="e.g HTML, CSS"
+            required
+        >
+        <label for="projectStatus">Status</label>
+        <select id="projectStatus">
+            <option value="Planning">Planning</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button type="submit" class="saveProject">Create Project</button>
+
+        </form>
+    </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,634 @@
+:root {
+    --mainBlue: #1d699c;
+    --mainAqua: #06ddb2;
+    --mainBlueTrans: rgba(0, 157, 255, 0.644);
+    --mainDarkBlue: #0f3d5e;
+    --mainRed: #dc321c;
+    --mainRedTrans: rgba(255, 0, 0, 0.4);
+    --font-family: 'Comic Sans MS', sans-serif;
+    --mainBlackTrans: rgba(0, 0, 0, 0.7);
+    --mainHeight: 84vh;
+    --mainHeaderHeight: 18vh;
+    --mainWhite: #ffffff;
+    --mainTan: #eac285;
+    --mainBrown: #4a3009;
+    --mainLightBrown: #ae9570;
+    --mainGreen: #07ad1a;
+    --mainBlack: #000;
+    --mainBook: #e7e495;
+}
+
+body {
+    background-color: var(--mainBlue);
+    margin: 0;
+}
+
+.height-100 {
+    height: var(--mainHeight);
+}
+
+.underline {
+    height: 2vh;
+    background-color: var(--mainRed);
+    width: 70vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+    border: 3px solid var(--mainBlackTrans);
+}
+
+.underline2 {
+    height: 2vh;
+    background-color: var(--mainBlue);
+    width: 70vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+    border: 3px solid var(--mainDarkBlue);
+}
+
+.mainHeader {
+    text-align: center;
+    font-size: var(--mainHeaderHeight);
+    color: var(--mainRed);
+    margin-bottom: 0;
+    margin-top: 0;
+    text-shadow: 12px 20px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Neon Effect
+
+text-shadow: 5px 5px 20px rgba(44, 240, 227, 0.5);
+
+*/
+
+.subHeader {
+    text-align: center;
+    font-size: var(--mainHeaderHeight);
+    color: var(--mainBlue);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 12px 20px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.mainSection {
+    background-color: var(--mainBlackTrans);
+    min-height: var(--mainHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid var(--mainDarkBlue);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1vh 4vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--mainBlue);
+}
+
+.nav-links li:hover {
+    background-color: var(--mainDarkBlue);
+    scale: 1.1;
+    transition: all 0.6s ease-out;
+}
+
+.nav-links li {
+    margin: 0 25px;
+    background-color: var(--mainRed);
+    padding: 10px 20px;
+    border: 3px solid var(--mainBlackTrans);
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+
+.xpBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.xpHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: var(--mainRed);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 10vh;
+    background-color: var(--mainBlackTrans);
+    padding: 2vh;
+    border: var(--mainDarkBlue) 1vh solid;
+}
+
+#xpProgress {
+    width: 70vh;
+    height: 2vh;
+    background-color: var(--mainDarkBlue);
+    border-radius: 10px;
+    border: 3px solid var(--mainBlackTrans);
+    max-width: 70vh;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--mainDarkBlue);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--mainRed);
+    border-radius: 10px;
+    background-image: url(./img/spider-logo-v1.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.xpValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font: var(--font-family);
+    font-size: 3vh;
+    color: var(--mainWhite);
+}
+
+.xpContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainDarkBlue);
+    padding: 2vh;
+    border: 1vh solid var(--mainBlackTrans);
+}
+
+.xpLevel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: var(--mainWhite);
+    font-size: 8vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--mainBlackTrans);
+    padding: 2vh;
+    border: var(--mainDarkBlue) 1vh dashed;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.identityContainer {
+    align-items: stretch;
+    gap: 4vh;
+    max-width: 1200px;
+    margin: 5vh auto 2vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainRed);
+    padding: 2vh;
+    border: 1vh solid var(--mainDarkBlue);
+}
+
+.spideyIdentity {
+    padding: 2vh 4vh;
+    text-shadow: 2px 2px 4px var(--mainBlackTrans);
+    flex: 1;
+    max-width: 50%;
+}
+
+.spideyHeading {
+    font-size: 6vh;
+}
+
+.spideyInformation {
+    padding: 2vh;
+    width: 35vh;
+    display: flex;
+    align-items: center;  
+}
+
+.spideyAvatar {
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    display: flex;
+}
+
+/* Missions CSS */
+
+.mixedHeader {
+    display: flex;
+}
+
+.boardContainer {
+    min-width: 800px;
+    max-width: 70%;
+    height: 86vh;
+    background-color: var(--mainTan);
+    border: 3vh solid var(--mainBrown);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 4vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    justify-items: center;
+}
+
+.mission-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    font-size: 90%;
+}
+
+.mission-container:hover {
+    scale: 1.1;
+    transition: all 1s;
+}
+
+.mission-container.is-flipped .mission-inner {
+    transform: rotateY(180deg);
+    transition: all 1s;
+}
+
+.mission-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    background: var(--mainWhite);
+    text-align: center;
+    padding: 2vh;
+    box-sizing: border-box;
+    border: 4px solid var(--mainBlackTrans);
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px var(--mainBlackTrans);
+}
+
+.mission-front {
+    background-color: var(--mainWhite);
+}
+
+.flip-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--mainRed);
+    color: white;
+    border: 2px solid var(--mainBlackTrans);
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    z-index: 10;
+}
+
+.back-flip {
+    background: var(--mainBlue);
+}
+
+.back-flip:hover {
+    background-color: var(--mainDarkBlue);
+}
+
+.flip-btn:hover {
+    background-color: var(--mainDarkBlue);
+}
+
+.mission-back {
+    background-color: #f9f9f9;
+    transform: rotateY(180deg);
+}
+
+.mission {
+    text-decoration: underline;
+    color: var(--mainDarkBlue);
+}
+
+.mission-container {
+    height: 24vh;
+    width: 30vh;
+    perspective: 1000px;
+    position: relative;
+    transition: all 1s;
+}
+
+.mission-container::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--mainRed);
+    border-radius: 50%;
+    border: 2px solid var(--mainBlackTrans);
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    z-index: 100; 
+}
+
+.pos-1 { grid-column: 1; grid-row: 1; transform: rotate(-2deg); }
+.pos-3 { grid-column: 3; grid-row: 1; transform: rotate(3deg); }
+.pos-5 { grid-column: 2; grid-row: 2; transform: rotate(-1deg); }
+.pos-7 { grid-column: 1; grid-row: 3; transform: rotate(4deg); }
+.pos-9 { grid-column: 3; grid-row: 3; transform: rotate(-3deg); }
+
+.accept {
+    font-size: 2vh;
+    background: none;
+    border: none;
+    transition: all 1s;
+}
+
+.accept:hover {
+    scale: 2;
+    color: var(--mainGreen);
+    cursor:pointer;
+    
+}
+
+.xp-reward {
+    color: var(--mainBlue);
+}
+
+/* Journal CSS */
+
+.journalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.journal {
+    background: var(--mainBook);
+    border: 1vh solid var(--mainBrown);
+    width: 90vh;
+    height: 90vh;
+    overflow:auto;
+}
+
+.journalHeading {
+    text-align:center;
+    margin-top: 5vh;
+    font-size: 6vh;
+    text-decoration: underline;
+}
+
+.journalEntree {
+    align-items: center;
+    justify-content: center;
+    margin-left: 2vh;
+}
+
+.journalText {
+    width: 50vh;
+    height: 60vh;
+    margin: auto;
+    border: 1vh solid var(--mainBrown);
+    min-width: 50vh;
+    max-width: 80vh;
+    background-color: var(--mainBook);
+    font-family: var(--mainFont-Family);
+    font-size: 150%;
+    padding: 1vh;
+
+}
+
+.journalLeft {
+    background: var(--mainLightBrown);
+    border: 1vh solid var(--mainBrown);
+    border-right: 1vh solid var(--mainLightBrown);
+    height: 90vh;
+    width: 45vh;
+}
+
+/* Projects Section */
+
+#projectsLoad {
+    width: 90%;
+    max-width: 1400px;
+    min-height: 60vh;
+    margin: 5vh auto;
+    padding: 4vh;
+    box-sizing: border-box;
+    background-color: var(--mainDarkBlue);
+    border: 1vh solid var(--mainBlackTrans)
+
+}
+
+.projectsLoadHeading {
+    color: var(--mainRed);
+    text-align: center;
+    font-size: 8vh;
+    margin: 1vh 0 4vh;
+    text-decoration: underline var(--mainBlue);
+    text-shadow: 2px 2px 4px var(--mainBlackTrans);
+    font-weight:bold;
+}
+
+.projectsLoadContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3vh;
+}
+
+.addProject {
+    border: 4px solid var(--mainWhite);
+    padding: 1vh;
+    color: var(--mainWhite);
+    background-color: var(--mainDarkBlue);
+    width: 100%;
+    min-height: 10vh;
+    font-family: var(--font-family);
+    font-size: 4vh;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+.addProject:hover {
+    background-color: var(--mainRed);
+    border-color: var(--mainWhite);
+    transform: scale(1.03);
+
+}
+
+.projectCard {
+    background-color: var(--mainWhite);
+    border: 4px solid var(--mainBlackTrans);
+    border-radius: 8px;
+    padding: 2vh;
+    min-height: 25vh;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0 var(--mainBlackTrans);
+    transition: transform 0.5s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Modal */
+
+.projectModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: var(--mainBlackTrans);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.projectModal.active {
+    display: flex;
+}
+
+.projectForm {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--mainWhite);
+    border: 1vh solid var(--mainDarkBlue);
+    box-shadow: 10px 10px 0 var(--mainBlackTrans);
+    padding: 4vh;
+    box-sizing:border-box;
+}
+
+.projectForm h2 {
+    text-align: center;
+    color: var(--mainRed);
+    font-family: var(--font-family);
+    font-size: 5vh;
+    margin-top: 0;
+}
+
+.projectForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.projectForm label {
+    color: var(--mainDarkBlue);
+    font-family: var(--font-family);
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+
+.projectForm input,
+.projectForm textarea,
+.projectForm select {
+    font-family: var(--font-family);
+    font-size: 2vh;
+    padding: 1.5vh;
+    border: 3px solid var(--mainDarkBlue);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.projectForm textarea {
+    min-height: 15vh;
+    resize: vertical;
+}
+
+.saveProject {
+    margin-top: 2vh;
+    padding: 1.5vh;
+    background-color: var(--mainRed);
+    color: var(--mainWhite);
+    border: 3px solid var(--mainBlackTrans);
+    font-family: var(--font-family);
+    font-size: 2.5vh;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.saveProject:hover {
+    background-color: var(--mainDarkBlue);
+    transform: scale(1.03);
+}
+
+.closeProjectForm {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    background: var(--mainRed);
+    color: var(--mainWhite);
+    border: 2px solid var(--mainBlackTrans);
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.closeProjectForm:hover {
+    background-color: var(--mainDarkBlue);
+}
+
+.projectCard {
+    background: var(--mainRed);
+    font-size: 125%;
+    color: var(--mainWhite);
+    text-shadow: 5px 0px 10px var(--mainAqua);
+
+}
+
+.projectLogo {
+    width: 30px;
+    height: 45px;
+    margin-bottom: 1px;
+}

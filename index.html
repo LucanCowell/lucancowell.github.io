@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spidey Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Font Awesome-->
+     <script src="https://kit.fontawesome.com/50bffcd4b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/pages/journal.html">Journal</a></li>
+        <li><a href="/pages/projects.html">Projects</a></li>
+        <li><a href="/pages/skills.html">Skills</a></li>
+        <li><a href="/pages/missions.html">Missions</a></li>
+    </ul>
+</nav>
+<section class="mainSection" id="mainSection">
+<div class="heading-container">
+    <h1 class="mainHeader">Spidey</h1>
+    <div class="underline"></div>
+    <h1 class="subHeader">Tracker</h1>
+    <div class="underline2"></div>
+</div>
+</section>
+
+<!-- Spidey Level-->
+<section id="dashboard" class="dashboard">
+    <div class="xpContainer">
+        <h1 class="xpHeader">Spidey Level</h1>
+        <h2 class="xpLevel">1</h2>
+        <div class="xpBar">
+            <progress id="xpProgress" value="0" max="200"></progress>
+        </div>
+        <h2 class="xpValue">0/200</h2>
+    </div>
+</section>
+<!-- End of Spidey Level-->
+
+<!-- Spidey Identity-->
+ <section id="identity" class="identity">
+    <div class="identityContainer">
+        <div class="spideyInformation col-md-6 col-sm-12">
+            <img src="img/spider-logo-v1.png" alt="Spidey Avatar" class="spideyAvatar">
+
+        </div>
+        <div class="spideyIdentity col-md-6 col-sm-12">
+            <h1 class="spideyHeading"> Lucan Cowell</h1>
+            <div class="spideyStats">
+            <h2> Fitness: </h2>
+            <div class="star" id="fitnessStars">
+                
+            </div>
+            <h2> Academics: </h2>
+            <div class="star" id="academicsStars">
+                
+            </div>
+            <h2> Creative: </h2>
+            <div class="star" id="creativeStars">
+                
+            </div>
+            <h2> Programming: </h2>
+            <div class="star" id="programmingStars">
+                
+            </div>
+            <h2> Electrical Engineering: </h2>
+            <div class="star" id="electricalStars">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+<!-- End of Spidey Identity-->
+
+</body>
+</html>
