@@ -357,8 +357,8 @@ progress::-webkit-progress-value {
 }
 
 .mission-container {
-    height: 30vh;
-    width: 35vh;
+    height: 28vh;
+    width: 33vh;
     perspective: 1000px;
     position: relative;
     transition: all 1s;
