@@ -30,7 +30,7 @@ body {
 .underline {
     height: 2vh;
     background-color: var(--mainRed);
-    width: 70vh;
+    width: 100%;
     margin-top: 2vh;
     border-radius: 10px;
     border: 3px solid var(--mainBlackTrans);
@@ -39,7 +39,7 @@ body {
 .underline2 {
     height: 2vh;
     background-color: var(--mainBlue);
-    width: 70vh;
+    width: 100%;
     margin-top: 2vh;
     border-radius: 10px;
     border: 3px solid var(--mainDarkBlue);
@@ -82,20 +82,20 @@ text-shadow: 5px 5px 20px rgba(44, 240, 227, 0.5);
 .navbar {
     display: flex;
     align-items: center;
-    width: 100%;
     padding: 1vh 4vh;
     box-sizing: border-box;
     position: relative;
 }
 
 .nav-links {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
     background-color: var(--mainBlue);
+    width: 100%;
 }
 
 .nav-links li:hover {
@@ -105,7 +105,7 @@ text-shadow: 5px 5px 20px rgba(44, 240, 227, 0.5);
 }
 
 .nav-links li {
-    margin: 0 25px;
+    margin: 0 2vw;
     background-color: var(--mainRed);
     padding: 10px 20px;
     border: 3px solid var(--mainBlackTrans);
@@ -124,6 +124,7 @@ text-shadow: 5px 5px 20px rgba(44, 240, 227, 0.5);
     align-items: center;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    width: 100%;
 }
 
 .xpHeader {
@@ -141,12 +142,12 @@ text-shadow: 5px 5px 20px rgba(44, 240, 227, 0.5);
 }
 
 #xpProgress {
-    width: 70vh;
+    width: 800px;
     height: 2vh;
     background-color: var(--mainDarkBlue);
     border-radius: 10px;
     border: 3px solid var(--mainBlackTrans);
-    max-width: 70vh;
+    max-width: 100%;
 }
 
 progress {
@@ -189,6 +190,7 @@ progress::-webkit-progress-value {
     background-color: var(--mainDarkBlue);
     padding: 2vh;
     border: 1vh solid var(--mainBlackTrans);
+    width: 80%;
 }
 
 .xpLevel {
@@ -217,7 +219,8 @@ progress::-webkit-progress-value {
 .identityContainer {
     align-items: stretch;
     gap: 4vh;
-    max-width: 1200px;
+    max-width: 80%;
+    max-height: 100vw;
     margin: 5vh auto 2vh;
     margin-top: 5vh;
     display: flex;
@@ -231,24 +234,31 @@ progress::-webkit-progress-value {
 .spideyIdentity {
     padding: 2vh 4vh;
     text-shadow: 2px 2px 4px var(--mainBlackTrans);
-    flex: 1;
-    max-width: 50%;
+    max-width: 60%;
+    font-size: 2vw;
 }
 
 .spideyHeading {
     font-size: 6vh;
 }
 
+.spideyName {
+    background: none;
+    font-size: 3vw;
+    border: none;
+    font-family: var(--font-family);
+    font-weight:bolder;
+    width: 40vw;
+}
+ 
 .spideyInformation {
-    padding: 2vh;
-    width: 35vh;
-    display: flex;
-    align-items: center;  
+    width: 100%;
 }
 
 .spideyAvatar {
-    width: 100%;
-    height: 100%;
+    width: 35vw;
+    height: 45%;
+    margin-left: 10vw;
 }
 
 .star {
@@ -357,8 +367,8 @@ progress::-webkit-progress-value {
 }
 
 .mission-container {
-    height: 28vh;
-    width: 33vh;
+    height: 24vh;
+    width: 30vh;
     perspective: 1000px;
     position: relative;
     transition: all 1s;
